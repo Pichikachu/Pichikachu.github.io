@@ -21,6 +21,7 @@
       </p>
       <div class="actions">
         <a href="https://github.com/Pichikachu" class="button primary">GitHub</a>
+        <a href="#aquamesh" class="button">AquaMesh case study</a>
         <a href="#work" class="button">What I help with</a>
       </div>
     </section>
@@ -41,6 +42,58 @@
         <h2>Learn</h2>
         <p>Practical explanations around software, architecture, Bitcoin, and systems thinking.</p>
       </article>
+    </section>
+
+    <section class="case-study" id="aquamesh" aria-labelledby="aquamesh-title">
+      <div class="case-heading">
+        <p class="eyebrow">Case study · AquaMesh</p>
+        <h2 id="aquamesh-title">From abstract dashboard builder to student learning workspace</h2>
+        <p>
+          AquaMesh started as a flexible but vague widget/dashboard tool. I helped Cosme turn it into
+          something more concrete: a study-focused product where students can create knowledge dashboards,
+          generate study packs, review notes, practice with quizzes, and follow AI-built study paths.
+        </p>
+      </div>
+
+      <div class="before-after" aria-label="AquaMesh before and after screenshots">
+        <figure>
+          <span class="badge">Before</span>
+          <img src="assets/aquamesh-before.png" alt="Older AquaMesh interface with pale green dashboard builder controls" />
+          <figcaption>Earlier AquaMesh: green-ish, abstract, and centered around generic dashboard creation.</figcaption>
+        </figure>
+        <figure>
+          <span class="badge after">After</span>
+          <img src="assets/aquamesh-after.png" alt="Current AquaMesh interface showing a student math dashboard with knowledge widgets" />
+          <figcaption>Now: clearer learning dashboards with study content, examples, review prompts, and richer widgets.</figcaption>
+        </figure>
+      </div>
+
+      <div class="impact-grid">
+        <article>
+          <h3>Product direction</h3>
+          <p>Helped reshape the idea from “make widgets” into “help students learn”: Study Packs, Study Paths, AI Tutor mode, review flows, and generated lesson dashboards.</p>
+        </article>
+        <article>
+          <h3>UX clarity</h3>
+          <p>Separated builder/viewer states, simplified onboarding, improved mobile behavior, made empty states useful, and clarified dashboard vs widget workflows.</p>
+        </article>
+        <article>
+          <h3>Learning blocks</h3>
+          <p>Added richer knowledge blocks like long text, lists, image/PDF references, explanations, quizzes, flashcards, review prompts, sequences, tables, and markdown notes.</p>
+        </article>
+        <article>
+          <h3>AI quality</h3>
+          <p>Improved Gemini prompts, JSON normalization, fallback retries, Study Path generation, and safeguards so the AI produces useful student-facing material instead of shallow placeholders.</p>
+        </article>
+        <article>
+          <h3>Monetization flow</h3>
+          <p>Helped surface the actual end-user experience: paywall previews, hosted AI credits, free/basic mode, upgrade CTAs, and clearer settings copy.</p>
+        </article>
+        <article>
+          <h3>DevOps & reliability</h3>
+          <p>Tracked Vercel failures, fixed production build issues, resolved runtime preview crashes, kept PRs deployable, and verified changes with builds/checks.</p>
+        </article>
+      </div>
     </section>
 
     <section class="panel">
