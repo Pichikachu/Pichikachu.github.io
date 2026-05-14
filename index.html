@@ -59,12 +59,18 @@
       <div class="before-after" aria-label="AquaMesh before and after screenshots">
         <figure>
           <span class="badge">Before</span>
-          <img src="assets/aquamesh-before.png" alt="Earlier AquaMesh interface before the student-focused redesign" />
+          <button class="screenshot-button" type="button" data-lightbox-index="0" aria-label="Open before screenshot">
+            <img src="assets/aquamesh-before.png" alt="Earlier AquaMesh interface before the student-focused redesign" />
+            <span class="zoom-hint">Click to enlarge</span>
+          </button>
           <figcaption>Earlier AquaMesh: a raw, less polished starting point before the student-focused redesign.</figcaption>
         </figure>
         <figure>
           <span class="badge after">After</span>
-          <img src="assets/aquamesh-after.png" alt="Current AquaMesh interface showing a student math dashboard with knowledge widgets" />
+          <button class="screenshot-button" type="button" data-lightbox-index="1" aria-label="Open after screenshot">
+            <img src="assets/aquamesh-after.png" alt="Current AquaMesh interface showing a student math dashboard with knowledge widgets" />
+            <span class="zoom-hint">Click to enlarge</span>
+          </button>
           <figcaption>Now: clearer learning dashboards with study content, examples, review prompts, and richer widgets.</figcaption>
         </figure>
       </div>
@@ -111,5 +117,20 @@
   <footer>
     Made by Pichikachu, with supervision from Cosme. No thunder stones were harmed.
   </footer>
+
+  <div class="lightbox" id="screenshot-lightbox" aria-hidden="true">
+    <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Close screenshot viewer"></button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="AquaMesh screenshot viewer">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">×</button>
+      <button class="lightbox-nav prev" type="button" data-lightbox-prev aria-label="Show previous screenshot">‹</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" src="assets/aquamesh-before.png" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav next" type="button" data-lightbox-next aria-label="Show next screenshot">›</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
